@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vollkorn', serif;
+}
+
+a{
+    text-decoration: none;
+}
+hr {
+    margin: 0;
+}
+/* .header-style{
+    padding: 40px 0 40px 0 ;
+} */
+
+.main-icon{
+    margin:0 250px 0 50px;
+}
+.bg-img{
+    background-image: url(img/bg.jpg);
+    /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+}
+.main_imgBox {
+    height: 680px;
+  overflow: hidden;
+  position: relative; 
+}
+
+.main_img {
+    z-index:2;
+    opacity: 0;
+    width: 100%;
+    height: 680px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 36s 0s infinite;
+    animation: anime 36s 0s infinite; 
+}
+
+.main_img:nth-of-type(2) {
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s; 
+}
+
+.main_img:nth-of-type(3) {
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+
+.main_img:nth-of-type(4) {
+    -webkit-animation-delay: 27s;
+    animation-delay: 27s; 
+}
+
+.under-border{
+    position: relative;
+}
+
+.under-border::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -23px;/*線の上下位置*/
+  display: inline-block;
+  width: 80px;/*線の長さ*/
+  height: 2px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: black;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+
+.contact-bg-img{
+  background-image: url(img/tdu.jpg);
+        /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  
+  background-color:rgba(255,255,255,0.4);
+
+  background-blend-mode:lighten;
+
+}
+
+@keyframes anime {
+    0% {
+          opacity: 0;
+      }
+      8% {
+          opacity: 1;
+      }
+      17% {
+          opacity: 1;
+      }
+      25% {
+          opacity: 0;
+          transform: scale(1.2) ;
+           z-index:9;
+      }
+      100% { opacity: 0 }
+  }
+
+  .text-box {
+      letter-spacing: 0.5rem;
+      position: absolute;
+      bottom: 25%;
+      left: 55%;
+      z-index: 900;
+      color:azure;
+      font-weight: bold;
+  }
+  .text-box p{
+      font-size: 18px;
+  }
+  .text-box h2{
+      font-size: 40px;
+  }
+  
+.img-style{
+    height: 310px;
+}
+
+.boxContainer{
+   display:flex;
+   justify-content: center;
+}
+
+.qualification h2{
+    border-bottom: 2px solid orange;
+    margin-bottom: 30px;
+}
+
+.map-position-criteria{
+    overflow: hidden;
+    position: relative; 
+}
+
+.map-position-right{
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+
+.map-position-left{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.footer-bg-img{
+background-image: url(img/footer-bg.jpeg);
+    /* 画像を常に天地左右の中央に配置 */
+background-position: center center;
+
+/* 画像をタイル状に繰り返し表示しない */
+background-repeat: no-repeat;
+
+/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+background-attachment: fixed;
+
+/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+background-size: cover;
+
+background-color:rgba(255,255,255,0.4);
+
+background-blend-mode:lighten;
+}
+
+.footer-icon{
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+}
+.footer-icon h1{
+    margin-left: 22px;
+    margin-top: 25px;
+}
+
+.place{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sns{
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: .8;
+}
+
+.sns a {
+    color: black;
+}
+
+.sns a:hover{
+    opacity: .7;
+}
+
+.sns a:nth-child(2){
+    margin-left: 20px;
+}
+
+.sns a:nth-child(3){
+    margin-left: 20px;
+}
+
+.sns i{
+    font-size: 25px;
+}
+
+.link-dendai{
+    text-align: center;
+    margin-bottom: 90px;
+    opacity: .8;
+}
+
+.link-dendai a{
+    color: black;
+}
+
+
+.link-dendai a:hover{
+    opacity: .8;
+}
+
+.fadeIn {
+    transform: translate3d(0, -10px, 0);
+    transition: 2s;
+    opacity: 0;
+}
+  
+.fadeIn.animated {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+ 
+/*2.上下の動きを指定*/
+.updown {transform: translateY(-100px);}
+.downup {transform: translateY(100px);}
+ 
+/*3.左右の動きを指定*/
+.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+.slide-right {transform: translateX(200px);}
+.slide-left {transform: translateX(-200px);}
+
+
+ /* デスクトップ, 1199px 以下 */
+ @media (max-width: 1199px) {
+    .main-icon{
+        margin:0 250px 0 50px;
+    }
+}
+
+ /* タブレット, 991px 以下 */
+@media (max-width: 991px) {
+    .main-icon{
+        margin: 0 30px 0 0;
+    }
+}
+
+ /* 横向きモバイル, 767px 以下 */
+@media (max-width: 768px) {
+    .main-icon{
+        margin: 0 30px 0 0;
+    }
+}
+
+ /* 縦向きモバイル, 575px 以下 */
+@media (max-width: 575px) {
+    .main-icon{
+        opacity: 0.8;
+        margin: 0;
+    }
+    .text-box {
+        letter-spacing: 0.5rem;
+        bottom: 20%;
+        left: 40%;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+}
+/* デスクトップ, 1199px 以下 */
+@media (max-width: 1199px) {
+   .main-icon{
+       margin:0 250px 0 50px;
+   }
+}
+
+/* タブレット, 991px 以下 */
+@media (max-width: 991px) {
+   .main-icon{
+       margin: 0 30px 0 0;
+   }
+}
+
+/* 横向きモバイル, 767px 以下 */
+@media (max-width: 768px) {
+   .main-icon{
+       margin: 0 30px 0 0;
+   }
+}
+
+/* 縦向きモバイル, 575px 以下 */
+@media (max-width: 575px) {
+   .main-icon{
+       opacity: 0.8;
+       margin: 0;
+   }
+   .text-box {
+       letter-spacing: 0.5rem;
+       bottom: 20%;
+       left: 40%;
+   }
+   .text-box p{
+       font-size: 12px;
+   }
+   .text-box h2{
+       font-size: 20px;
+   }
+}
