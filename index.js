@@ -2,7 +2,9 @@ $(window).on('load scroll', function (){
 
     var box = $('.fadeIn');
     var animated = 'animated';
+    var test = 0;
     
+    console.log(test);
     box.each(function(){
     
       var boxOffset = $(this).offset().top;
