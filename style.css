@@ -168,6 +168,18 @@ hr {
     margin-bottom: 30px;
 }
 
+.labs-access{
+    text-align: center;
+    display: none;
+}
+.labs-access a{
+    width: 300px;
+}
+
+.card-style{
+ width: 20rem;
+}
+
 .map-position-criteria{
     overflow: hidden;
     position: relative; 
@@ -282,63 +294,10 @@ background-blend-mode:lighten;
 .slide-left {transform: translateX(-200px);}
 
 
- /* デスクトップ, 1199px 以下 */
- @media (max-width: 1199px) {
-    .main-icon{
-        margin:0 250px 0 50px;
-    }
-}
-
- /* タブレット, 991px 以下 */
-@media (max-width: 991px) {
-    .main-icon{
-        margin: 0 30px 0 0;
-    }
-}
-
- /* 横向きモバイル, 767px 以下 */
-@media (max-width: 768px) {
-    .main-icon{
-        margin: 0 30px 0 0;
-    }
-}
-
- /* 縦向きモバイル, 575px 以下 */
-@media (max-width: 575px) {
-    .main-icon{
-        opacity: 0.8;
-        margin: 0;
-    }
-    .text-box {
-        letter-spacing: 0.5rem;
-        bottom: 20%;
-        left: 40%;
-    }
-    .text-box p{
-        font-size: 12px;
-    }
-    .text-box h2{
-        font-size: 20px;
-    }
-}
 /* デスクトップ, 1199px 以下 */
 @media (max-width: 1199px) {
    .main-icon{
        margin:0 250px 0 50px;
-   }
-}
-
-/* タブレット, 991px 以下 */
-@media (max-width: 991px) {
-   .main-icon{
-       margin: 0 30px 0 0;
-   }
-}
-
-/* 横向きモバイル, 767px 以下 */
-@media (max-width: 768px) {
-   .main-icon{
-       margin: 0 30px 0 0;
    }
 }
 
@@ -359,6 +318,20 @@ background-blend-mode:lighten;
    .text-box h2{
        font-size: 20px;
    }
+   .labs{
+       display: none;
+   }
+   .labs-access{
+       display: block;
+   }
+   .map-position-right{
+       width: 300px;
+       height: 300px;
+       top: 500px;
+       right: 40px; 
+   }
+   .map-position-left{
+       width: 300px;
+       height: 300px;
+   }
 }
-
-/* aaaaaa */
